@@ -1,0 +1,809 @@
+
+.navbar-expand {
+    background-color: #1B242F;
+    border-bottom: 3px solid #05C2C9;
+    padding-bottom: 10px;
+    
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-expand .nav-item.active .nav-link,
+.navbar-expand .nav-item:hover .nav-link {
+    color:#E31B6D;
+}
+
+
+.card .reveal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+
+.card:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 10;
+    transition: opacity 0.7s ease;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+    .card:hover .reveal h4 {
+        color: #E31B6D;
+    }
+
+    .card:hover .reveal p {
+        color: white;
+    }
+mark.red {
+	font-weight:bold;
+    color:#E31B6D;
+    background: none;
+}
+
+
+.hex-image {
+ width: 340px;
+ height: 300px;
+ background: transparent url("me.jpg") no-repeat; 
+ background-size: cover;
+ background-position: center center;
+ position: relative;
+ margin: 50px auto; /* centering */
+ transform: rotate(10deg); /* need to rotation ? */
+}
+
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.card-btn{
+	border-width: 0px;
+	background-color:#EC407A;
+	width:200px;
+	height:50px;
+}
+
+
+a:link, a:visited {
+	text-decoration:none;
+	color: white;
+}
+
+.btn-about {
+    border: 2px solid white;
+}
+
+.btn-about:hover{
+	background-color:#04C2C9;
+	color:white;
+	border-width: 0px;
+}
+.change-icon{
+	font-size:23px;
+}
+
+.change-icon > .fa + .fa,
+.change-icon:hover > .fa {
+  display: none;
+}
+.change-icon:hover > .fa + .fa {
+  display: inherit;
+}
+
+
+
+.hexa, .hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.hexa {
+  width: 325px;
+  height: 230px;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+.my-3{
+	
+	opacity: 0.7;
+}
+
+
+span.progress-num {
+    padding-right:10px;
+    float:right;
+}
+
+.animation {
+    height: 25px;
+    margin-top: 20px;
+    background: #eeeeee;
+}
+.animation-1 {
+    height: 25px;
+    background: #eeeeee;
+}
+
+
+.animation-bar {
+    height: 25px;
+    width: 0;
+    background-color: #01A1A9;
+    position: relative;
+    -webkit-transition: all 4s ease-out;
+    transition: all 4s ease-out;
+}
+
+span.animation-title {
+    padding: 4px;
+    width: 100px;
+    color: white;
+    background-color: #05C2C9;
+    float: left;
+    height: 25px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(-50px);
+    animation: come-in 0.8s ease forwards;
+    -webkit-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.p50 {
+    width: 50%;
+}
+
+.p55 {
+    width: 55%;
+}
+.p80 {
+    width: 80%;
+}
+
+.p85 {
+    width: 85%;
+}
+.p70 {
+    width: 70%;
+}
+
+.footer {
+    background-color:#1B242F;
+}
+
+.footer-icon {
+    padding-top: 30px;
+}
+    .footer-icon i {
+        color: #fff;
+        background-color: #262F38;
+        padding: 15px 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-icon i:hover {
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+        border-color: #fff;
+        background: #04C2C9;
+        -webkit-transform: scale(0.93);
+        -moz-transform: scale(0.93);
+        -ms-transform: scale(0.93);
+        transform: scale(0.93);
+    }
+
+#Contact {
+    background-color:#252934;
+}
+
+#responseDiv{
+    color:white;
+    font-size:20px;
+}
+.divider {
+    width: 100%;
+    height: 8vh;
+    fill: white;
+    background: #252934;
+}
+
+input[type=text], select, textarea {
+    width: 55%; /* Full width */
+    padding: 12px; /* Some padding */
+    background-color: #1E242C;
+    border-width: 0;
+    outline: none;
+    color:white;
+}
+
+input[type=email], select, textarea {
+    width: 55%; /* Full width */
+    padding: 12px; /* Some padding */
+    background-color: #1E242C;
+    border-width: 0;
+    outline: none;
+    color: white;
+}
+
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: transparent;
+    color: white;
+    padding: 12px 20px;
+    border:2px solid white;
+    cursor: pointer;
+    position:relative;
+    left:17.5%;
+	width:20%;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #04C2C9;
+        color: white;
+        
+    }
+
+    .form-group{
+        margin-top:-10px;
+    }
+
+.fa-angle-double-up {
+    width: 40px;
+    height: 50px;
+    background-color: #E31B6D;
+    border-width: 0px;
+    position: relative;
+    top: 80px;
+    font-size: 40px;
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #252934;
+    overflow: hidden;
+}
+
+    .background li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 10s linear infinite;
+    }
+
+
+
+
+        .background li:nth-child(0) {
+            left: 40%;
+            width: 55px;
+            height: 55px;
+            bottom: -55px;
+            animation-delay: 1s;
+        }
+
+        .background li:nth-child(1) {
+            left: 31%;
+            width: 51px;
+            height: 51px;
+            bottom: -51px;
+            animation-delay: 3s;
+        }
+
+        .background li:nth-child(2) {
+            left: 12%;
+            width: 79px;
+            height: 79px;
+            bottom: -79px;
+            animation-delay: 1s;
+        }
+
+        .background li:nth-child(3) {
+            left: 70%;
+            width: 59px;
+            height: 59px;
+            bottom: -59px;
+            animation-delay: 6s;
+        }
+
+        .background li:nth-child(4) {
+            left: 62%;
+            width: 48px;
+            height: 48px;
+            bottom: -48px;
+            animation-delay: 18s;
+        }
+
+        .background li:nth-child(5) {
+            left: 63%;
+            width: 94px;
+            height: 94px;
+            bottom: -94px;
+            animation-delay: 9s;
+        }
+
+        .background li:nth-child(6) {
+            left: 57%;
+            width: 96px;
+            height: 96px;
+            bottom: -96px;
+            animation-delay: 4s;
+        }
+
+        .background li:nth-child(7) {
+            left: 49%;
+            width: 93px;
+            height: 93px;
+            bottom: -93px;
+            animation-delay: 15s;
+        }
+
+        .background li:nth-child(8) {
+            left: 3%;
+            width: 61px;
+            height: 61px;
+            bottom: -61px;
+            animation-delay: 9s;
+        }
+
+        .background li:nth-child(9) {
+            left: 13%;
+            width: 62px;
+            height: 62px;
+            bottom: -62px;
+            animation-delay: 11s;
+        }
+
+        .background li:nth-child(10) {
+            left: 58%;
+            width: 69px;
+            height: 69px;
+            bottom: -69px;
+            animation-delay: 33s;
+        }
+
+        .background li:nth-child(11) {
+            left: 40%;
+            width: 88px;
+            height: 88px;
+            bottom: -88px;
+            animation-delay: 19s;
+        }
+
+        .background li:nth-child(12) {
+            left: 29%;
+            width: 67px;
+            height: 67px;
+            bottom: -67px;
+            animation-delay: 1s;
+        }
+
+        .background li:nth-child(13) {
+            left: 69%;
+            width: 62px;
+            height: 62px;
+            bottom: -62px;
+            animation-delay: 40s;
+        }
+
+        .background li:nth-child(14) {
+            left: 34%;
+            width: 60px;
+            height: 60px;
+            bottom: -60px;
+            animation-delay: 21s;
+        }
+
+        .background li:nth-child(15) {
+            left: 17%;
+            width: 80px;
+            height: 80px;
+            bottom: -80px;
+            animation-delay: 68s;
+        }
+
+        .background li:nth-child(16) {
+            left: 78%;
+            width: 50px;
+            height: 50px;
+            bottom: -50px;
+            animation-delay: 54s;
+        }
+
+        .background li:nth-child(17) {
+            left: 18%;
+            width: 80px;
+            height: 80px;
+            bottom: -80px;
+            animation-delay: 17s;
+        }
+
+        .background li:nth-child(18) {
+            left: 70%;
+            width: 86px;
+            height: 86px;
+            bottom: -86px;
+            animation-delay: 50s;
+        }
+
+        .background li:nth-child(19) {
+            left: 39%;
+            width: 85px;
+            height: 85px;
+            bottom: -85px;
+            animation-delay: 17s;
+        }
+
+        .background li:nth-child(20) {
+            left: 15%;
+            width: 74px;
+            height: 74px;
+            bottom: -74px;
+            animation-delay: 61s;
+        }
+
+        .background li:nth-child(21) {
+            left: 89%;
+            width: 91px;
+            height: 91px;
+            bottom: -91px;
+            animation-delay: 46s;
+        }
+
+        .background li:nth-child(22) {
+            left: 54%;
+            width: 97px;
+            height: 97px;
+            bottom: -97px;
+            animation-delay: 46s;
+        }
+
+        .background li:nth-child(23) {
+            left: 85%;
+            width: 84px;
+            height: 84px;
+            bottom: -84px;
+            animation-delay: 55s;
+        }
+
+        .background li:nth-child(24) {
+            left: 41%;
+            width: 83px;
+            height: 83px;
+            bottom: -83px;
+            animation-delay: 88s;
+        }
+
+        .background li:nth-child(25) {
+            left: 22%;
+            width: 83px;
+            height: 83px;
+            bottom: -83px;
+            animation-delay: 64s;
+        }
+
+        .background li:nth-child(26) {
+            left: 58%;
+            width: 75px;
+            height: 75px;
+            bottom: -75px;
+            animation-delay: 129s;
+        }
+
+        .background li:nth-child(27) {
+            left: 47%;
+            width: 76px;
+            height: 76px;
+            bottom: -76px;
+            animation-delay: 69s;
+        }
+
+        .background li:nth-child(28) {
+            left: 18%;
+            width: 70px;
+            height: 70px;
+            bottom: -70px;
+            animation-delay: 15s;
+        }
+
+        .background li:nth-child(29) {
+            left: 74%;
+            width: 70px;
+            height: 70px;
+            bottom: -70px;
+            animation-delay: 122s;
+        }
+
+        .background li:nth-child(30) {
+            left: 6%;
+            width: 97px;
+            height: 97px;
+            bottom: -97px;
+            animation-delay: 53s;
+        }
+
+        .background li:nth-child(31) {
+            left: 86%;
+            width: 75px;
+            height: 75px;
+            bottom: -75px;
+            animation-delay: 91s;
+        }
+
+        .background li:nth-child(32) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            bottom: -60px;
+            animation-delay: 73s;
+        }
+
+        .background li:nth-child(33) {
+            left: 41%;
+            width: 44px;
+            height: 44px;
+            bottom: -44px;
+            animation-delay: 128s;
+        }
+
+        .background li:nth-child(34) {
+            left: 76%;
+            width: 55px;
+            height: 55px;
+            bottom: -55px;
+            animation-delay: 7s;
+        }
+
+        .background li:nth-child(35) {
+            left: 71%;
+            width: 56px;
+            height: 56px;
+            bottom: -56px;
+            animation-delay: 11s;
+        }
+
+        .background li:nth-child(36) {
+            left: 51%;
+            width: 83px;
+            height: 83px;
+            bottom: -83px;
+            animation-delay: 108s;
+        }
+
+        .background li:nth-child(37) {
+            left: 8%;
+            width: 44px;
+            height: 44px;
+            bottom: -44px;
+            animation-delay: 6s;
+        }
+
+        .background li:nth-child(38) {
+            left: 79%;
+            width: 57px;
+            height: 57px;
+            bottom: -57px;
+            animation-delay: 106s;
+        }
+
+        .background li:nth-child(39) {
+            left: 46%;
+            width: 90px;
+            height: 90px;
+            bottom: -90px;
+            animation-delay: 100s;
+        }
+
+        .background li:nth-child(40) {
+            left: 81%;
+            width: 72px;
+            height: 72px;
+            bottom: -72px;
+            animation-delay: 40s;
+        }
+
+        .background li:nth-child(41) {
+            left: 54%;
+            width: 92px;
+            height: 92px;
+            bottom: -92px;
+            animation-delay: 168s;
+        }
+
+        .background li:nth-child(42) {
+            left: 12%;
+            width: 96px;
+            height: 96px;
+            bottom: -96px;
+            animation-delay: 50s;
+        }
+
+        .background li:nth-child(43) {
+            left: 81%;
+            width: 44px;
+            height: 44px;
+            bottom: -44px;
+            animation-delay: 18s;
+        }
+
+        .background li:nth-child(44) {
+            left: 25%;
+            width: 85px;
+            height: 85px;
+            bottom: -85px;
+            animation-delay: 147s;
+        }
+
+        .background li:nth-child(45) {
+            left: 54%;
+            width: 69px;
+            height: 69px;
+            bottom: -69px;
+            animation-delay: 119s;
+        }
+
+        .background li:nth-child(46) {
+            left: 42%;
+            width: 69px;
+            height: 69px;
+            bottom: -69px;
+            animation-delay: 165s;
+        }
+
+        .background li:nth-child(47) {
+            left: 43%;
+            width: 46px;
+            height: 46px;
+            bottom: -46px;
+            animation-delay: 172s;
+        }
+
+        .background li:nth-child(48) {
+            left: 82%;
+            width: 89px;
+            height: 89px;
+            bottom: -89px;
+            animation-delay: 149s;
+        }
+
+        .background li:nth-child(49) {
+            left: 67%;
+            width: 75px;
+            height: 75px;
+            bottom: -75px;
+            animation-delay: 188s;
+        }
+
+.btn-about {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.hello {
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .font-weight-light {
+        font-size: 20px;
+    }
+
+    .btn-about {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .change-icon {
+        font-size: 18px;
+    }
+
+    input[type=text], select, textarea {
+        width: 80%; /* Full width */
+        padding: 12px; /* Some padding */
+        background-color: #1E242C;
+        border-width: 0;
+        outline: none;
+        color: white;
+    }
+
+    input[type=email], select, textarea {
+        width: 80%; /* Full width */
+        padding: 12px; /* Some padding */
+        background-color: #1E242C;
+        border-width: 0;
+        outline: none;
+        color: white;
+    }
+
+
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+        position: relative;
+        left: 25%;
+        width: 30%;
+    }
+}
+
